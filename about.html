@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="a stunning website for a great school in ordinary place">
+    <link rel="shortcut icon" href="./images/mrsmemoriallogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>M.R.S. Memorial School | Official Website</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <b>NEWS :</b>
+            <marquee behavior="" direction="left">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium repudiandae cupiditate veritatis eligendi.
+            </marquee>
+        </div>
+    </div>
+    <div class="container2">
+        <img src="./images/mrslogo.png" class="logo" alt="M.R.S. memorial school logo">
+        <nav>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="link-container">
+                <label for="sidebar-active" class="close-sidebar-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+                <a href=".\index.html">Home</a>
+                <a href=".\gallery.html">Gallery</a>
+                <a href=".\notice.html">Notice</a>
+                <a href=".\ss.html">Student's Stuff</a>
+                <a href=".\about.html">About us</a>
+                <a href="#footer">Contact us</a>
+            </div>
+        </nav>
+    </div>
+    <div class="slider">
+        <img src="./images/new-session.jpg" alt="background-image">
+    </div>
+    <div class="about-us">
+            <h4>Our Institute</h4>
+            <h2 class="h2">About My School</h2>
+            <p class="para">M.R.S. Memorial School was built in the memory of Late Shri Mulki Raj Saini, a great philanthropist, freedom fighter, member of legislative assembly. (U.P.). Member of Parliament (M.P. Dehradun Seat) The school was inaugurated by Mrs. Aradhana Shukla (H'ble D.M., Saharanpur) in the year 2001. The school started it's functioning on 1° July 2001 under the management committee comprising of educationalists, retired principals and renowned social workers.<br>"EDUCATION IS WHAT REMAINS AFTER ONE HAS FORGOTTEN WHAT ONE HAS LEARNED IN SCHOOL".</p><br>
+            <p class="para">The school is situated on Saharanpur-Gangoh Road ( just 3 km away from the urban population of the Saharanpur Distt.) and housed in the natural and clean, pollution free environment exactly suitable for the children's academic and co-curricular activities as well as enhancing their personality in the field of games and sports. It is well equipped with library, separate laboratories for Science, Mathematics and Social Science and with team of highly qualified | teachers to impart education of high quality and moral values.</p><br>
+            <p class="para">This is a senior secondary school affiliated to Central Board of Secondary Education, Delhi. The Medium of instruction is English.</p>
+    </div>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src=".\images\mrs-trans.png" alt="" class="footer-logo"> <span><h6>Since 2001</h6><h4>MRS Memorial Senior<br>Secondary School</h4></span>
+            </div>
+            <div class="footer-sect">
+                <address>7 km stone, Gangoh Road, Unali, <br>Saharanpur, Uttar Pradesh 247001</address>
+                <div class="footer-sect">
+                    <img src=".\images\telephone.png" alt=""> <span>+91 1234567890</span>
+                </div>
+                <div class="footer-sect">
+                    <img src=".\images\mail.png" alt=""> <span>Johndoe@gmail.com</span>
+                </div>
+                <div class="footer-sect">
+                    <a href=""><img src=".\images\facebook.png" alt="mrs-fb-page"></a>
+                    <a href=""><img src=".\images\twitter.png" alt="mrs-twitter-handle"></a>
+                    <a href=""><img src=".\images\instagram.png" alt="mrs-insta-id"></a>
+                    <a href="https://youtube.com/@m.r.s.memorialschool?si=OHNAeM4Y7hL77jU9"><img src=".\images\youtube.png" alt="mrs-yt-channel"></a>
+                </div>
+                <p>© 2024 M.R.S. Memorial School. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sidebarCheckbox = document.getElementById('sidebar-active');
+            const contactLink = document.querySelector('a[href="#footer"]');
+            
+            contactLink.addEventListener('click', () => {
+                sidebarCheckbox.checked = false; // Uncheck the checkbox to close the menu
+            });
+        });
+    </script>
+</body>
+</html>

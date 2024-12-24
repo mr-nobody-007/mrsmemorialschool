@@ -1,0 +1,64 @@
+.class-selection {
+    margin: 10px 0;
+}
+
+.class-selection select {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.downloads-container {
+    margin-top: 20px;
+}
+
+.downloads-container h3{
+    margin: 20px;
+}
+
+.downloads-container h4{
+    margin: 10px;
+}
+
+.download-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.download-item a {
+    display: inline-block;
+    text-decoration: none;
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.download-item a:hover {
+    background: #007BFF;
+}
+.ss h2{
+    margin: 20px;
+    font-size: 2em;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.ss p{
+    margin: 20px;
+    font-size: 1em;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.container3{
+    width: auto;
+    margin-bottom: 250px;
+}

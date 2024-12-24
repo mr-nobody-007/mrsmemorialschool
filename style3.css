@@ -1,0 +1,99 @@
+.event {
+    width: 32%;
+    margin-left: 1.1%;
+    float: left;
+    background: white;
+    height: 432px;
+    overflow: hidden;
+    position: relative;
+    justify-content: space-between;
+    border-radius: 5%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event i {
+    color: red;
+    font-size: 14px;
+}
+
+.event div {
+    padding: 10px;
+}
+
+.event .heading {
+    padding: 10px;
+    color: white;
+    background: #007BFF;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.marquee {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 40px;
+    overflow-y: scroll;
+    height: 360px;
+}
+
+.marquee ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* margin-top: 30px; */
+}
+
+.marquee li {
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+
+
+/* Media query adjustments */
+@media only screen and (max-width: 865px) {
+    .event {
+        width: 90%;
+        margin: 5%;
+        float: none;
+        overflow-y: auto;
+    }
+
+    .event::-webkit-scrollbar {
+        width: 0px; /* Scrollbar width */
+    }
+
+    .event::-webkit-scrollbar-thumb {
+        background-color: #bdbdbd; /* Scrollbar color */
+        border-radius: 10px; /* Rounded scrollbar */
+    }
+
+    .event::-webkit-scrollbar-thumb:hover {
+        background-color: #0056b3; /* Hover effect for scrollbar */
+    }
+
+    .event .heading {
+        position: sticky;
+        margin-bottom: 0px;
+    }
+    .marquee{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 2px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 360px;
+    }
+    .marquee:hover ul {
+        animation-play-state:paused;
+    }
+    
+}

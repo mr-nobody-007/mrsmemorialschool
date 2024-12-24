@@ -1,0 +1,49 @@
+.heading {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #007BFF;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 850;
+    font-style: normal;
+}
+.subhead {
+    font-size: 18px;
+    color: red;
+    font-weight: 500;
+}
+.about-us div {
+    width: 45%;
+    float: left;
+    line-height: 30px;
+    font-size: 18px;
+}
+.about-us h4 {
+    font-size: 18px;
+    color: red;
+    font-weight: 500;
+    display: inline;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+}
+.about-us p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-right: 0px;
+    line-height: 23px;
+    display: inline;
+}
+.about-us img {
+    width: 39%;
+    float: left;
+    /* left: ; */
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+div.txt {
+    width: 95%;
+    margin-left: 5px;
+}
