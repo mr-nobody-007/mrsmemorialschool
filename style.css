@@ -426,6 +426,10 @@ nav a:hover{
     padding: 0;
     float: none;
 }
+.container-end{
+    width: 1300px;
+    margin: 0px auto;
+}
 @media only screen and (max-width: 940px) {
     .link-container{
         flex-direction: column;
