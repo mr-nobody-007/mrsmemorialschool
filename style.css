@@ -15,17 +15,20 @@ html, body {
 .container {
     width: 1300px;
     margin: 0px auto;
+    display: flex;
+    align-content: center;
 }
 .header {
     background: #007BFF;
     padding: 6px;
     display: flex;
+    align-content: center;
 }
 .header b {
     background: white;
     color: red;
-    padding: 10px;
-    font-size: 20px;
+    padding: 5px;
+    font-size: 12px;
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 1000;
@@ -34,7 +37,7 @@ html, body {
 .header marquee {
     font-size: 20px;
     color: whitesmoke;
-    margin-top: 6px;
+    margin-top: 0;
     width: 80%;
 }
 .logo {
@@ -125,7 +128,7 @@ nav a:hover{
     font-size: 14px;
 }
 .event div {
-    padding: 10px;
+    padding: 0px;
 }
 .event .heading {
     padding: 10px;
@@ -183,7 +186,7 @@ nav a:hover{
     color: red;
     padding-left: 85px;
 }
-.campus-news p {
+.cam-p{
     font-size: 14px;
     padding-left: 85px;
 }
@@ -226,7 +229,7 @@ nav a:hover{
     z-index: 1;
 }
 .campus-news div.cam-news, .event div.dates {
-    margin-top: 50px;
+    margin-top: 0px;
 }
 .about-us{
     display: flex;
@@ -416,8 +419,12 @@ nav a:hover{
     height:auto;
     margin-bottom: 20px;
 }
-.footer-sect p{
+.footer-sect p, .end-list{
     font-size: 12px;
+    color:#757575;
+    text-align: center;
+    padding: 0;
+    float: none;
 }
 @media only screen and (max-width: 940px) {
     .link-container{
@@ -517,9 +524,13 @@ nav a:hover{
         align-items: center;
         padding: 2px;
     }
+    .container{
+        display: flex;
+        align-content: center;
+    }
     .header b{
-        font-size: 10px;
-        padding: 5px;
+        font-size: 8px;
+        padding: 3px;
         font-weight: 1000;
         margin: 0px;
     }
