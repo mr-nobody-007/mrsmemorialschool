@@ -3,7 +3,7 @@
 // Define available downloads for each class
 const downloads = {
     class12a: [
-        { name: "Syllabus (Class 12th PCM)", link: "files/syllabus_class_12_a.pdf" },
+        { name: "Syllabus (Class 12th PCM)", link: "./12th holiday homework (2).pdf" },
         { name: "Exam Datesheet 2024-2025", link: "files/datesheet_2024.pdf" }
     ],
     class12b: [
