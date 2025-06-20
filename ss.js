@@ -7,7 +7,8 @@ const downloads = {
         { name: "Exam Datesheet 2024-2025", link: "files/datesheet_2024.pdf" }
     ],
     class12b: [
-        { name: "Syllabus (Class 12th PCB)", link: "files/syllabus_class_12_b.pdf" },
+        { name: "Syllabus (Class 12th PCB)", link: "./Chemistry_Project_Salivary_Amylase_Complete.docx
+            " },
         { name: "Exam Datesheet 2024-2025", link: "files/datesheet_2024.pdf" }
     ],
     class12c: [
