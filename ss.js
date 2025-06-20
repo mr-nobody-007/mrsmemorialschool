@@ -1,4 +1,4 @@
-// scripts.js
+// ss.js
 
 // Define available downloads for each class
 const downloads = {
@@ -65,34 +65,42 @@ const downloads = {
     class1: [
         { name: "Syllabus (Class 1st)", link: "files/syllabus_class_1.pdf" },
         { name: "Exam Datesheet 2024-2025", link: "files/datesheet_2024.pdf" }
-    ],
+    ]
 };
 
-// Handle class selection
-document.getElementById("class-select").addEventListener("change", function () {
-    const selectedClass = this.value;
-    const downloadsContainer = document.getElementById("downloads-container");
-    const downloadItems = document.getElementById("download-items");
+// Function to display downloads for selected class
+function showDownloadsForClass(classValue) {
+    const container = document.getElementById("downloads-container");
+    const itemsContainer = document.getElementById("download-items");
 
     // Clear previous items
-    downloadItems.innerHTML = "";
+    itemsContainer.innerHTML = "";
 
-    if (downloads[selectedClass]) {
-        // Show the downloads section
-        downloadsContainer.style.display = "block";
+    if (downloads[classValue]) {
+        downloads[classValue].forEach(item => {
+            const div = document.createElement("div");
+            div.classList.add("download-item");
 
-        // Add download items
-        downloads[selectedClass].forEach((item) => {
-            const downloadDiv = document.createElement("div");
-            downloadDiv.className = "download-item";
-            downloadDiv.innerHTML = `
-                <h4>${item.name}</h4>
-                <a href="${item.link}" download>Download PDF</a>
-            `;
-            downloadItems.appendChild(downloadDiv);
+            const link = document.createElement("a");
+            link.href = item.link;
+            link.textContent = item.name;
+            link.setAttribute("target", "_blank");
+
+            div.appendChild(link);
+            itemsContainer.appendChild(div);
         });
+
+        container.style.display = "block";
     } else {
-        // Hide the downloads section if no downloads are found
-        downloadsContainer.style.display = "none";
+        container.style.display = "none";
     }
+}
+
+// Add event listener to dropdown
+document.addEventListener('DOMContentLoaded', () => {
+    const select = document.getElementById("class-select");
+    select.addEventListener("change", (e) => {
+        const selectedClass = e.target.value;
+        showDownloadsForClass(selectedClass);
+    });
 });
